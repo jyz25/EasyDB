@@ -11,4 +11,9 @@ public class Error {
     // tm
     public static final Exception BadXIDFileException = new RuntimeException("Bad XID file!");
 
+
+
+    // launcher
+    public static final Exception InvalidMemException = new RuntimeException("Invalid memory!");
+
 }

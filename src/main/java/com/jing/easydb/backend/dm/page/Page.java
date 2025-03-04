@@ -1,11 +1,18 @@
 package com.jing.easydb.backend.dm.page;
 
 public interface Page {
+    void lock();
+
+    void unlock();
+
+    void release();
 
     void setDirty(boolean dirty);
 
-    byte[] getData();
+    boolean isDirty();
 
     int getPageNumber();
+
+    byte[] getData();
 
 }
